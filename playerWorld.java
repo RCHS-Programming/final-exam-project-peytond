@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class playerWorld here.
+ * This is the background. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Peyton Dunn 
+ * @version 5/11/21
  */
 public class playerWorld extends World
 {
@@ -16,6 +16,14 @@ public class playerWorld extends World
     public playerWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(800, 600, 1); 
+        
+        addObject(new Wall(), 24, 10);  
+        addObject(new Wall(), 74, 10);
+        addObject(new Wall(), 124, 10);
+        addObject(new Wall(), 174, 10); 
+        addObject(new Wall(), 224, 10);
+        addObject(new Wall(), 254, 10); 
+        addObject(new Wall(), 304, 10); 
     }
 }
