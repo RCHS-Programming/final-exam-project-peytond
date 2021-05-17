@@ -205,5 +205,79 @@ public class playerWorld extends World
         {
             addObject(new Wall("edge2.png"), 327, 383);
         }
+        
+        //scoreboard
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge.png"), 50, 492);
+        }
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge.png"), 100, 492);
+        }
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge2.png"), 144, 554);
+        }
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge2.png"), 144, 505);
+        }
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge.png"), 123, 492);
+        }
+        
+        //finish maze
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge2.png"), 144, 455);
+        }
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge2.png"), 144, 406);
+        }
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge2.png"), 144, 356);
+        }
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge2.png"), 144, 306);
+        }
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge.png"), 177, 421);
+        }
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge2.png"), 396, 172);
+        }
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge2.png"), 227, 327);
+        }
+        for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge.png"), 111, 321);
+        }
+        
+        //add player
+        addObject (new Player(), 74, 105);
+        //add cupcakes
+        addObject (new Cupcake(), 321, 103);
+        addObject (new Cupcake(), 732, 63);
+        addObject (new Cupcake(), 732, 214);
+        addObject (new Cupcake(), 612, 295);
+        addObject (new Cupcake(), 733, 317);
+        addObject (new Cupcake(), 733, 540);
+        addObject (new Cupcake(), 397, 317);
+        addObject (new Cupcake(), 78, 441);
+        addObject (new Cupcake(), 192, 474);
+        addObject (new Cupcake(), 228, 213);
+        
+        //Scoreboard text
+        showText("Lives : ", 60, 515);
+        showText("Eaten : ", 60, 558); 
     }
 }
