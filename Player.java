@@ -22,6 +22,7 @@ public class Player extends Actor
         playerMovement();
         cupcakeEaten = 0;
         lookForCupcake();
+        testEndGame();
     }    
     public void detectCastle()
     {
@@ -35,16 +36,10 @@ public class Player extends Actor
         if(isTouching(Wall.class) )
         {
             setLocation (74, 105);
-            lives = lives - 1; 
-            
+            lives = lives - 1;zzzz
             getWorld(). showText("Lives: " + lives, 60, 515);
-
-            if(lives == 0)
-            {
-                Greenfoot.stop(); 
-            }
         }
-    }
+   }
     public void playerMovement()
     {
         if(Greenfoot.isKeyDown("up") )
@@ -73,8 +68,13 @@ public class Player extends Actor
             
             getWorld(). showText("Lives: " + lives, 60, 515);
             getWorld(). showText("Eaten: " + cupcakeEaten, 60, 558);
-            
-
+        }
+    }
+    public void testEndGame()
+    {
+        if(lives > 0)
+        {
+            Greenfoot.stop();
         }
     }
 }
