@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Tue May 18 07:52:36 EDT 2021
+#Tue May 18 08:42:45 EDT 2021
 class.ScorePanel.superclass=greenfoot.Actor
 target4.type=ClassTarget
 dependency3.from=Player
@@ -101,11 +101,11 @@ readme.height=58
 class.Spider.image=spider.png
 readme.name=@README
 target2.name=playerWorld
-simulation.speed=50
+simulation.speed=48
 package.numDependencies=8
 width=160
-publish.title=
 class.Spider.superclass=greenfoot.Actor
+publish.title=
 dependency8.from=playerWorld
 class.Cupcake.image=muffin.png
 dependency8.type=UsesDependency

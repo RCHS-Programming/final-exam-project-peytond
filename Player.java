@@ -8,21 +8,22 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Player extends Actor
 {
-    private int lives; 
     private int cupcakeEaten;
     /**
      * Act - do whatever the Player wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public Player()
+    {
+        cupcakeEaten = 0;
+    }
     public void act() 
     {
         detectCastle();
         detectWallCollision();
-        lives = 3;
         playerMovement();
-        cupcakeEaten = 0;
         lookForCupcake();
-        testEndGame();
+        detectSpider(); 
     }    
     public void detectCastle()
     {
@@ -35,11 +36,9 @@ public class Player extends Actor
     {
         if(isTouching(Wall.class) )
         {
-            setLocation (74, 105);
-            lives = lives - 1;zzzz
-            getWorld(). showText("Lives: " + lives, 60, 515);
+            setLocation(124, 109);
         }
-   }
+    }
     public void playerMovement()
     {
         if(Greenfoot.isKeyDown("up") )
@@ -66,15 +65,15 @@ public class Player extends Actor
             removeTouching(Cupcake.class);
             cupcakeEaten = cupcakeEaten + 1; 
             
-            getWorld(). showText("Lives: " + lives, 60, 515);
-            getWorld(). showText("Eaten: " + cupcakeEaten, 60, 558);
+            getWorld(). showText("Eaten: " + cupcakeEaten, 61, 516);
+            
         }
     }
-    public void testEndGame()
+    public void detectSpider()
     {
-        if(lives > 0)
+        if(isTouching(Spider.class) )
         {
-            Greenfoot.stop();
+            setLocation(124, 109);
         }
     }
 }

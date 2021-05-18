@@ -20,6 +20,7 @@ public class playerWorld extends World
         
         addObject(new Castle(), 510, 410); 
         addObject(new ScorePanel(), 76, 540); 
+        addObject(new Spider(), 75, 221); 
         for(int i = 0; i < 16; i++)
         {
             addObject(new Wall("edge.png"), 25 + 50*i, 12);
@@ -70,7 +71,11 @@ public class playerWorld extends World
         }
         for(int i = 0; i < 2; i++)
         {
-            addObject(new Wall("edge2.png"), 558, 50); 
+            addObject(new Wall("edge2.png"), 558, 33); 
+        }
+            for(int i = 0; i < 2; i++)
+        {
+            addObject(new Wall("edge2.png"), 558, 33); 
         }
         for(int i = 0; i < 2; i++)
         {
@@ -142,7 +147,7 @@ public class playerWorld extends World
         }
         for (int i = 0; i < 2; i++)
         {
-            addObject(new Wall("edge2.png"), 673, 554); 
+            addObject(new Wall("edge2.png"), 673, 578); 
         }
         for (int i = 0; i < 2; i++)
         {
@@ -183,7 +188,7 @@ public class playerWorld extends World
         }
         for(int i = 0; i < 2; i++)
         {
-            addObject(new Wall("edge.png"), 327, 270);
+            addObject(new Wall("edge.png"), 335, 270);
         }
         for(int i = 0; i < 2; i++)
         {
@@ -203,7 +208,7 @@ public class playerWorld extends World
         }
         for(int i = 0; i < 2; i++)
         {
-            addObject(new Wall("edge2.png"), 327, 383);
+            addObject(new Wall("edge2.png"), 327, 396);
         }
         
         //scoreboard
@@ -263,7 +268,7 @@ public class playerWorld extends World
         }
         
         //add player
-        addObject (new Player(), 74, 105);
+        addObject (new Player(), 124, 109);
         //add cupcakes
         addObject (new Cupcake(), 321, 103);
         addObject (new Cupcake(), 732, 63);
@@ -277,7 +282,7 @@ public class playerWorld extends World
         addObject (new Cupcake(), 228, 213);
         
         //Scoreboard text
-        showText("Lives : ", 60, 515);
-        showText("Eaten : ", 60, 558); 
+        showText("Eaten : ", 61, 516); 
+        
     }
 }

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * These spiders will try and stop you from getting to the end, you will need to kill them. 
+ * Write a description of class Spider here.
  * 
  * @author Peyton Dunn 
- * @version 5/11/21
+ * @version 5/18/21
  */
 public class Spider extends Actor
 {
@@ -14,6 +14,26 @@ public class Spider extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        randomTurn(); 
+        detectWall(); 
+        move();
     }    
+    public void move()
+    {
+        move(2); 
+    }
+    public void randomTurn()
+    {
+        if(Greenfoot.getRandomNumber(100) < 10)
+        {
+            turn(Greenfoot.getRandomNumber(91) - 45);
+        }
+    }
+    public void detectWall()
+    {
+        if(isTouching(Wall.class) )
+        {
+            setLocation(75, 221); 
+        }
+    }
 }
