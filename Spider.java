@@ -33,7 +33,7 @@ public class Spider extends Actor
     {
         if(isTouching(Wall.class) )
         {
-            setLocation(75, 221); 
+            setLocation(383, 536); 
         }
     }
 }

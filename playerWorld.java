@@ -20,7 +20,7 @@ public class playerWorld extends World
         
         addObject(new Castle(), 510, 410); 
         addObject(new ScorePanel(), 76, 540); 
-        addObject(new Spider(), 75, 221); 
+        addObject(new Spider(), 383, 536); 
         for(int i = 0; i < 16; i++)
         {
             addObject(new Wall("edge.png"), 25 + 50*i, 12);
