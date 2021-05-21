@@ -20,20 +20,20 @@ public class Spider extends Actor
     }    
     public void move()
     {
-        move(2); 
+        move(1); 
     }
     public void randomTurn()
     {
         if(Greenfoot.getRandomNumber(100) < 10)
         {
-            turn(Greenfoot.getRandomNumber(91) - 45);
+            turn(Greenfoot.getRandomNumber(100) - 60);
         }
     }
     public void detectWall()
     {
         if(isTouching(Wall.class) )
         {
-            setLocation(383, 536); 
+            setLocation(233, 545); 
         }
     }
 }
