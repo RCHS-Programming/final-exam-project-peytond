@@ -15,7 +15,7 @@ public class Spider extends Actor
     public void act() 
     {
         randomTurn(); 
-        detectWall(); 
+        detectWall();
         move();
         turnAtEdge();
     }    
